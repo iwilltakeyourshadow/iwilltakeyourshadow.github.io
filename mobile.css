@@ -1,0 +1,52 @@
+@media only screen and (max-width:700px) {
+
+	html {
+		font-size: 14px;
+	}
+
+	body {
+		line-height: 21px;
+	}
+
+	section {
+		width: 90vw;
+		margin-bottom: 4rem;
+	}
+
+	section div.twocol {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	section div.twocol .col {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	section div.singlecol {
+		margin-bottom: 0;
+	}
+
+	section div.singlecol p {
+		max-width: 100%;
+	}
+
+	section div.singlecol img {
+		max-width: 100%;
+	}
+
+	h1.title{
+		width: 80vw;
+		height: 5vw;
+	}
+
+	#header div.trailer img {
+		max-width: 80vw;
+	}
+
+	#header p {
+		max-width: 100%;
+	}
+
+
+}

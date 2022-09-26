@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+html {
+	font-size: 1vw;
+}
+
+body {
+
+	background-color: black;
+	color: white;
+	font-family: "Inter UI", Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	overflow-x: hidden;
+	padding-top: 3vw;
+}
+
+/* 
+	TYPOGRAPHY
+*/
+
+h1 {}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: lighter;
+	line-height: 1.75rem;
+	margin-bottom: 3rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	line-height: 2rem;
+	font-weight: lighter;
+	margin-bottom: 1rem;
+}
+
+p {
+	max-width: 655px;
+	padding-bottom: 1rem;
+}
+
+b {
+	font-weight: bold;
+}
+
+span.caption {
+	display: block;
+	font-size: .7rem;
+	padding: .75rem 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* 
+	LAYOUT
+*/
+
+nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 101;
+}
+
+nav a {
+	color: white;
+	display: block;
+	padding: 1rem 2rem;
+	font-size: .85rem;
+}
+nav a:hover {
+	background-color: rgba(255,255,255,.8);
+	color: black;
+}
+
+section {
+	margin: 7rem auto;
+	width: 55rem;
+}
+
+section div.singlecol {
+	margin-bottom: 3rem;
+} section div.singlecol p {
+	max-width: 66%;
+} section div.singlecol img {
+	display: block;
+	margin: auto;
+	max-width: 650px;
+	height: auto;
+}
+
+section div.twocol {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	gap: 4vw;
+	margin-bottom: 3rem;
+}
+
+section div.col {
+	width: 50%;
+}
+
+section div.col img {
+	max-width: 100%;
+	height: auto;
+}
+
+.centered {
+	text-align: center;
+}
+section div.centeredcol {
+	justify-content: center !important;
+	gap: 0 !important;
+}
+
+
+
+/* white or black text */
+
+.white-text {
+	color: white;
+}
+
+.black-text {
+	color: black;
+}
+
+/* button with background */
+a.button-white {
+	display: block;
+	width: 250px;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	/* needs background img */
+	padding: 2rem;
+	border-radius: 20px;
+} a.button-white:hover { /* swap black img */
+	background-color: darkgray;
+	color: white;
+}
+a.button-black {
+
+} a.button-black:hover { /* swap white img */
+
+}
+
+img {
+
+}
+
+/* 
+	SVG TITLE
+*/
+
+h1.title{
+	background: url("assets/title.svg") no-repeat;
+	background-size: cover;
+	margin: auto;
+	height: 40px;
+	width: 500px;
+}
+
+.visually-hidden { 
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+    clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+/* 
+	HEADER
+*/
+
+section#header {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 3rem;
+}
+
+#header div.trailer img{
+	max-width: 50vw;
+	height: auto;
+}
+
+#header p {
+	max-width: 27rem;
+	margin: auto;
+}
+
+
+div.placeholder {
+	width: 100%;
+	height: 250px;
+	background-color: pink;
+}
+
+
+/* backgrounds // containers */
+
+div.bg-section {
+	background-size: 100% auto;
+	background-position: top;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+div.bg-black-1 {
+	
+	background-image: url("assets/black-bg-1.png");
+	padding-bottom: 23rem;
+	margin-bottom: -20rem; 
+	margin-top: -10rem;
+	padding-top: 10rem;
+	z-index: 10;
+
+	background-size: 100% 100%;
+}
+
+div.bg-white-1 {
+	background-image: url("assets/white-bg-1.png");
+	padding: 20rem 0;
+	z-index: 9;
+}
+
+div.bg-black-2 {
+
+	background: 
+		url("assets/black-bg-3.png"), 
+		url("assets/black-bg-2.png");
+	background-position: center bottom, center top;
+	background-size: 100% 82%, 100% auto;
+	background-repeat: no-repeat;
+	padding-top: 15rem;
+	padding-bottom: 30rem;
+	margin-bottom: -36rem;
+	margin-top: -15rem;
+	z-index: 11;
+	
+}
+
+
+@media only screen and (min-width:1500px) {
+
+	body {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+}
+
