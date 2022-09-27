@@ -7,6 +7,14 @@
 
 html {
 	font-size: 1vw;
+	scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 5rem;
+    margin: 0rem 0 0;
 }
 
 body {
@@ -27,17 +35,24 @@ body {
 h1 {}
 
 h2 {
-	font-size: 1.75rem;
+	font-size: 3rem;
 	font-weight: lighter;
 	line-height: 1.75rem;
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }
 
 h3 {
-	font-size: 1.25rem;
+	font-size: 2.25rem;
 	line-height: 2rem;
 	font-weight: lighter;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
+}
+
+h4 {
+	font-size: 1.75rem;
+	line-height: 2rem;
+	font-weight: lighter;
+	margin-bottom: 2.5rem;
 }
 
 p {
@@ -89,15 +104,23 @@ section {
 	width: 55rem;
 }
 
-section div.singlecol {
-	margin-bottom: 3rem;
-} section div.singlecol p {
-	max-width: 66%;
-} section div.singlecol img {
+section img {
 	display: block;
 	margin: auto;
 	max-width: 650px;
 	height: auto;
+}
+
+section div.singlecol {
+	margin-bottom: 5rem;
+	max-width: 66%;
+} /*section div.singlecol img {
+	display: block;
+	margin: auto;
+	max-width: 650px;
+	height: auto;*/
+} section div.singlecol a.button {
+	margin-top: 2rem;
 }
 
 section div.twocol {
@@ -132,6 +155,10 @@ section div.centeredcol {
 
 .white-text {
 	color: white;
+} .white-text p {
+	text-shadow: 0 0 .25rem black;
+} .white-text ul li {
+	text-shadow: 0 0 .25rem black;
 }
 
 .black-text {
@@ -139,24 +166,44 @@ section div.centeredcol {
 }
 
 /* button with background */
-a.button-white {
+a.button {
 	display: block;
 	width: 250px;
 	margin: auto;
 	text-align: center;
-	background-color: white;
-	/* needs background img */
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding: 2rem;
 	border-radius: 20px;
-} a.button-white:hover { /* swap black img */
-	background-color: darkgray;
+} 
+a.button-white-1 {
+	color: black;
+	background-image: url("assets/button-1-inverted.png");
+} a.button-white-1:hover {
+	background-image: url("assets/button-1.png");
 	color: white;
-}
-a.button-black {
-
-} a.button-black:hover { /* swap white img */
-
-}
+} 
+a.button-white-2 {
+	color: black;
+	background-image: url("assets/button-2-inverted.png");
+} a.button-white-2:hover {
+	background-image: url("assets/button-2.png");
+	color: white;
+} 
+a.button-black-1 {
+	color: white;
+	background-image: url("assets/button-1.png");
+} a.button-black-1:hover {
+	background-image: url("assets/button-1-inverted.png");
+	color: black;
+} 
+a.button-black-2 {
+	color: white;
+	background-image: url("assets/button-2.png");
+} a.button-black-2:hover {
+	background-image: url("assets/button-2-inverted.png");
+	color: black;
+} 
 
 img {
 
@@ -207,7 +254,8 @@ section#header {
 }
 
 #header p {
-	max-width: 27rem;
+	max-width: 500px;
+	width: 28rem;
 	margin: auto;
 }
 
