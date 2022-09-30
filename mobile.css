@@ -1,4 +1,28 @@
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:1300px) {
+
+	section {
+		width: 60rem;
+	}
+
+	html {
+		font-size: 1.4vw;
+	}
+
+	#mobile-indicator-1 {
+		display: block;
+		height: 1px;
+		width: 1px;
+	}
+
+}
+
+@media only screen and (max-width:1000px) {
+
+	#mobile-indicator-1 {
+		display: block;
+		height: 1px;
+		width: 1px;
+	}
 
 	html {
 		font-size: 14px;
@@ -6,6 +30,22 @@
 
 	body {
 		line-height: 21px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	h2 {
+		font-size: 30px;
+		margin-bottom: 3rem;
+	}
+
+	h3 {
+		font-size: 24px;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
 	}
 
 	section {
@@ -25,10 +65,11 @@
 
 	section div.singlecol {
 		margin-bottom: 0;
+		max-width: 100%;
 	}
 
 	section div.singlecol p {
-		max-width: 100%;
+		/*max-width: 100%;*/
 	}
 
 	section div.singlecol img {
@@ -37,7 +78,11 @@
 
 	h1.title{
 		width: 80vw;
-		height: 5vw;
+		height: 6vw;
+	}
+
+	nav .title {
+		display: none;
 	}
 
 	#header div.trailer img {
@@ -47,6 +92,55 @@
 	#header p {
 		max-width: 100%;
 	}
+
+	div.bg-black-1 {
+		margin-bottom: -23rem;
+	}
+
+	div.bg-black-2 {
+		background: url("assets/black-bg-3.png"), 
+			      url("assets/black-bg-3.png"),
+			      url("assets/black-bg-2.png"),
+			      url("assets/black-bg-2.png");
+		background-position: center 5%, center bottom, center 29%, center top;
+		background-size: 100% 30%, 150% 60%, 100% 30%, 100% auto;
+		background-repeat: no-repeat;
+		padding-bottom: 22rem;
+		padding-top: 10rem;
+	}
+
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	div.links {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	} div.links a {
+		width: 100%;
+		padding: 1.75rem 0;
+		color: black;
+		text-shadow: none;
+	} div.links a:focus, div.links a:active {
+		color: white;
+		background-color: rgba(0,0,0, .8);
+	}
+
+	a#trailer {
+		display: block;
+	}
+
+	#menu-button {
+		display: block;
+	}
+
+	.nav-title {
+		display: none;
+	}
+
 
 
 }
