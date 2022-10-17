@@ -47,11 +47,9 @@ $(document).ready(function() {
 	} else if ( isMobileWidthBig() ) {
 		console.log("mobile indicator big on");
 	} else {
+		$("nav").show();
 
-		$("nav").addClass("nav-background-dark");
-
-		navFadeIn();
-		
+		$("nav").addClass("nav-background-dark");		
 
 	}
 

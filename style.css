@@ -6,7 +6,7 @@
 }
 
 html {
-	font-size: 1vw;
+	font-size: 18px;
 	scroll-behavior: smooth;
 }
 
@@ -35,21 +35,21 @@ body {
 h1 {}
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.25rem;
 	font-weight: lighter;
 	line-height: 1.75rem;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
 }
 
 h3 {
 	font-size: 2.25rem;
-	line-height: 2rem;
+	line-height: 1.75rem;
 	font-weight: lighter;
 	margin-bottom: 3rem;
 }
 
 h4 {
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 	line-height: 2rem;
 	font-weight: lighter;
 	margin-bottom: 2.5rem;
@@ -99,8 +99,8 @@ div.links {
 nav a {
 	color: white;
 	display: block;
-	padding: 1rem 2rem;
-	font-size: 1rem;
+	padding: 1rem 1.5rem;
+	font-size: .8rem;
 	text-shadow: 0 0 5px black;
 }
 nav a:hover, nav a:active, nav a:focus {
@@ -236,12 +236,14 @@ h1.title{
 	margin: auto;
 	height: 2.8rem;
 	width: 35rem;
+	display: none;
 }
-/* resized for nav */
+/* resized for nav */ 
 nav .title {
 	height: 1.8rem;
 	width: 25rem;
-	margin-left: 1.5;
+	margin-left: 1.5rem;
+	display: block;
 }
 
 .visually-hidden { 
@@ -326,9 +328,9 @@ div.bg-black-2 {
 		url("assets/black-bg-3.png"), 
 		url("assets/black-bg-2.png");
 	background-position: center bottom, center top;
-	background-size: 100% 82%, 100% auto;
+	background-size: 100% 82%, 120% auto;
 	background-repeat: no-repeat;
-	padding-top: 15rem;
+	padding-top: 5rem;
 	padding-bottom: 30rem;
 	margin-bottom: -39rem;
 	margin-top: -15rem;
@@ -386,3 +388,17 @@ div.bg-black-2 {
 a#trailer {
 	display: none;
 }
+
+div#logos {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:center;
+}
+
+div#logos img {
+	width: 100%;
+	height: auto;
+	padding:0 1.5rem;
+}
+
